@@ -2,15 +2,15 @@
 
 ## Sample - ChooseColorPopover promise
 
-![Initial screen](https://user-images.githubusercontent.com/33305925/59664681-77d0e900-91ec-11e9-915c-84acaf281a90.png)
+![Initial screen](https://user-images.githubusercontent.com/33305925/59666223-64734d00-91ef-11e9-966e-c1a1f66dc543.png)
 
-![Background](https://user-images.githubusercontent.com/33305925/59664683-78697f80-91ec-11e9-83eb-3cd8d94772ea.png)
+![Background](https://user-images.githubusercontent.com/33305925/59666224-650be380-91ef-11e9-804a-f4d98a6e0cb2.png)
 
-![Bar](https://user-images.githubusercontent.com/33305925/59664684-78697f80-91ec-11e9-880f-4a421fc77484.png)
+![Bar](https://user-images.githubusercontent.com/33305925/59666225-650be380-91ef-11e9-9520-3befc259b2fe.png)
 
-![Title](https://user-images.githubusercontent.com/33305925/59664687-78697f80-91ec-11e9-98db-421b2e1fb4ce.png)
+![Title](https://user-images.githubusercontent.com/33305925/59666226-650be380-91ef-11e9-8478-4ecfa77ec604.png)
 
-![Changed](https://user-images.githubusercontent.com/33305925/59664688-78697f80-91ec-11e9-87fd-442e19cd9119.png)
+![Changed](https://user-images.githubusercontent.com/33305925/59666006-f29b0380-91ee-11e9-9cf0-2dfd314997fb.png)
 
 ## Author
 
