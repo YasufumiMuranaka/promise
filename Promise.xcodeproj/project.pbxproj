@@ -17,6 +17,9 @@
 		F91B8E5C22B889CA00B0EA55 /* Promise.m in Sources */ = {isa = PBXBuildFile; fileRef = F91B8E5A22B889CA00B0EA55 /* Promise.m */; };
 		F91B8E5F22B88F8000B0EA55 /* ChooseColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F91B8E5E22B88F7F00B0EA55 /* ChooseColorViewController.m */; };
 		F91B8E6122B88FA900B0EA55 /* ChooseColor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F91B8E6022B88FA900B0EA55 /* ChooseColor.storyboard */; };
+		F91B8E6A22B8E4DA00B0EA55 /* XMLParserRequestPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = F91B8E6522B8E4DA00B0EA55 /* XMLParserRequestPromise.m */; };
+		F91B8E6B22B8E4DA00B0EA55 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = F91B8E6622B8E4DA00B0EA55 /* XMLReader.m */; };
+		F91B8E6C22B8E4DA00B0EA55 /* HTTPRequestPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = F91B8E6822B8E4DA00B0EA55 /* HTTPRequestPromise.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,12 @@
 		F91B8E5D22B88F7F00B0EA55 /* ChooseColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseColorViewController.h; sourceTree = "<group>"; };
 		F91B8E5E22B88F7F00B0EA55 /* ChooseColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseColorViewController.m; sourceTree = "<group>"; };
 		F91B8E6022B88FA900B0EA55 /* ChooseColor.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ChooseColor.storyboard; sourceTree = "<group>"; };
+		F91B8E6322B8E4DA00B0EA55 /* XMLParserRequestPromise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParserRequestPromise.h; sourceTree = "<group>"; };
+		F91B8E6422B8E4DA00B0EA55 /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
+		F91B8E6522B8E4DA00B0EA55 /* XMLParserRequestPromise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParserRequestPromise.m; sourceTree = "<group>"; };
+		F91B8E6622B8E4DA00B0EA55 /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
+		F91B8E6822B8E4DA00B0EA55 /* HTTPRequestPromise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPRequestPromise.m; sourceTree = "<group>"; };
+		F91B8E6922B8E4DA00B0EA55 /* HTTPRequestPromise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPRequestPromise.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +78,8 @@
 		F91B8E3F22B8882B00B0EA55 /* Promise */ = {
 			isa = PBXGroup;
 			children = (
+				F91B8E6722B8E4DA00B0EA55 /* http */,
+				F91B8E6222B8E4DA00B0EA55 /* XMLParser */,
 				F91B8E6022B88FA900B0EA55 /* ChooseColor.storyboard */,
 				F91B8E5D22B88F7F00B0EA55 /* ChooseColorViewController.h */,
 				F91B8E5E22B88F7F00B0EA55 /* ChooseColorViewController.m */,
@@ -95,6 +106,28 @@
 				F91B8E5822B889CA00B0EA55 /* ChooseColorPromise.m */,
 			);
 			path = ChooseColorPromise;
+			sourceTree = "<group>";
+		};
+		F91B8E6222B8E4DA00B0EA55 /* XMLParser */ = {
+			isa = PBXGroup;
+			children = (
+				F91B8E6322B8E4DA00B0EA55 /* XMLParserRequestPromise.h */,
+				F91B8E6422B8E4DA00B0EA55 /* XMLReader.h */,
+				F91B8E6522B8E4DA00B0EA55 /* XMLParserRequestPromise.m */,
+				F91B8E6622B8E4DA00B0EA55 /* XMLReader.m */,
+			);
+			name = XMLParser;
+			path = ../../promise/Promise/XMLParser;
+			sourceTree = "<group>";
+		};
+		F91B8E6722B8E4DA00B0EA55 /* http */ = {
+			isa = PBXGroup;
+			children = (
+				F91B8E6822B8E4DA00B0EA55 /* HTTPRequestPromise.m */,
+				F91B8E6922B8E4DA00B0EA55 /* HTTPRequestPromise.h */,
+			);
+			name = http;
+			path = ../../promise/Promise/http;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,8 +203,11 @@
 			files = (
 				F91B8E5F22B88F8000B0EA55 /* ChooseColorViewController.m in Sources */,
 				F91B8E4522B8882B00B0EA55 /* ViewController.m in Sources */,
+				F91B8E6B22B8E4DA00B0EA55 /* XMLReader.m in Sources */,
 				F91B8E5022B8883000B0EA55 /* main.m in Sources */,
 				F91B8E5B22B889CA00B0EA55 /* ChooseColorPromise.m in Sources */,
+				F91B8E6A22B8E4DA00B0EA55 /* XMLParserRequestPromise.m in Sources */,
+				F91B8E6C22B8E4DA00B0EA55 /* HTTPRequestPromise.m in Sources */,
 				F91B8E4222B8882B00B0EA55 /* AppDelegate.m in Sources */,
 				F91B8E5C22B889CA00B0EA55 /* Promise.m in Sources */,
 			);

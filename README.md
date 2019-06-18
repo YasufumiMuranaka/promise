@@ -12,6 +12,12 @@
 
 ![Changed](https://user-images.githubusercontent.com/33305925/59666006-f29b0380-91ee-11e9-9cf0-2dfd314997fb.png)
 
+## Description
+
+[promise-instance](https://user-images.githubusercontent.com/33305925/59674490-5678f880-91fe-11e9-8167-59e7a6b4bd45.png)
+
+[promise-class](https://user-images.githubusercontent.com/33305925/59674492-5678f880-91fe-11e9-8cdb-499b2a249511.png)
+
 ## Author
 
 Yasufumi Muranaka
