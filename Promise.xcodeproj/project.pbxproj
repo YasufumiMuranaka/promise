@@ -13,6 +13,10 @@
 		F91B8E4A22B8883000B0EA55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F91B8E4922B8883000B0EA55 /* Assets.xcassets */; };
 		F91B8E4D22B8883000B0EA55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F91B8E4B22B8883000B0EA55 /* LaunchScreen.storyboard */; };
 		F91B8E5022B8883000B0EA55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F91B8E4F22B8883000B0EA55 /* main.m */; };
+		F91B8E5B22B889CA00B0EA55 /* ChooseColorPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = F91B8E5822B889CA00B0EA55 /* ChooseColorPromise.m */; };
+		F91B8E5C22B889CA00B0EA55 /* Promise.m in Sources */ = {isa = PBXBuildFile; fileRef = F91B8E5A22B889CA00B0EA55 /* Promise.m */; };
+		F91B8E5F22B88F8000B0EA55 /* ChooseColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F91B8E5E22B88F7F00B0EA55 /* ChooseColorViewController.m */; };
+		F91B8E6122B88FA900B0EA55 /* ChooseColor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F91B8E6022B88FA900B0EA55 /* ChooseColor.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,13 @@
 		F91B8E4C22B8883000B0EA55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F91B8E4E22B8883000B0EA55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F91B8E4F22B8883000B0EA55 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F91B8E5722B889CA00B0EA55 /* ChooseColorPromise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseColorPromise.h; sourceTree = "<group>"; };
+		F91B8E5822B889CA00B0EA55 /* ChooseColorPromise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseColorPromise.m; sourceTree = "<group>"; };
+		F91B8E5922B889CA00B0EA55 /* Promise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Promise.h; sourceTree = "<group>"; };
+		F91B8E5A22B889CA00B0EA55 /* Promise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Promise.m; sourceTree = "<group>"; };
+		F91B8E5D22B88F7F00B0EA55 /* ChooseColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseColorViewController.h; sourceTree = "<group>"; };
+		F91B8E5E22B88F7F00B0EA55 /* ChooseColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseColorViewController.m; sourceTree = "<group>"; };
+		F91B8E6022B88FA900B0EA55 /* ChooseColor.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ChooseColor.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +69,12 @@
 		F91B8E3F22B8882B00B0EA55 /* Promise */ = {
 			isa = PBXGroup;
 			children = (
+				F91B8E6022B88FA900B0EA55 /* ChooseColor.storyboard */,
+				F91B8E5D22B88F7F00B0EA55 /* ChooseColorViewController.h */,
+				F91B8E5E22B88F7F00B0EA55 /* ChooseColorViewController.m */,
+				F91B8E5622B889CA00B0EA55 /* ChooseColorPromise */,
+				F91B8E5922B889CA00B0EA55 /* Promise.h */,
+				F91B8E5A22B889CA00B0EA55 /* Promise.m */,
 				F91B8E4022B8882B00B0EA55 /* AppDelegate.h */,
 				F91B8E4122B8882B00B0EA55 /* AppDelegate.m */,
 				F91B8E4322B8882B00B0EA55 /* ViewController.h */,
@@ -69,6 +86,15 @@
 				F91B8E4F22B8883000B0EA55 /* main.m */,
 			);
 			path = Promise;
+			sourceTree = "<group>";
+		};
+		F91B8E5622B889CA00B0EA55 /* ChooseColorPromise */ = {
+			isa = PBXGroup;
+			children = (
+				F91B8E5722B889CA00B0EA55 /* ChooseColorPromise.h */,
+				F91B8E5822B889CA00B0EA55 /* ChooseColorPromise.m */,
+			);
+			path = ChooseColorPromise;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F91B8E4D22B8883000B0EA55 /* LaunchScreen.storyboard in Resources */,
+				F91B8E6122B88FA900B0EA55 /* ChooseColor.storyboard in Resources */,
 				F91B8E4A22B8883000B0EA55 /* Assets.xcassets in Resources */,
 				F91B8E4822B8882B00B0EA55 /* Main.storyboard in Resources */,
 			);
@@ -141,9 +168,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F91B8E5F22B88F8000B0EA55 /* ChooseColorViewController.m in Sources */,
 				F91B8E4522B8882B00B0EA55 /* ViewController.m in Sources */,
 				F91B8E5022B8883000B0EA55 /* main.m in Sources */,
+				F91B8E5B22B889CA00B0EA55 /* ChooseColorPromise.m in Sources */,
 				F91B8E4222B8882B00B0EA55 /* AppDelegate.m in Sources */,
+				F91B8E5C22B889CA00B0EA55 /* Promise.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

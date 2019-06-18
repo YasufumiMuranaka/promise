@@ -17,6 +17,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:[NSKeyedArchiver archivedDataWithRootObject:[UIColor colorWithRed:0.3 green:0.3 blue:0.3 alpha:1.0] requiringSecureCoding:NO error:nil]  forKey:@"backgroundColor"];
+    [defaults setObject:[NSKeyedArchiver archivedDataWithRootObject:[UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0] requiringSecureCoding:NO error:nil]  forKey:@"barColor"];
+    [defaults setObject:[NSKeyedArchiver archivedDataWithRootObject:[UIColor colorWithRed:0 green:0 blue:0 alpha:1.0] requiringSecureCoding:NO error:nil]  forKey:@"titleColor"];
+
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0]];
+    [[UINavigationBar appearance] setTintColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:1.0]];
     return YES;
 }
 
