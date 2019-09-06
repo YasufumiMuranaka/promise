@@ -18,10 +18,6 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-}
-
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     self.view.backgroundColor = self.backgroundColor;
@@ -79,7 +75,6 @@
 - (void)setBackgroundColor:(UIColor *)color {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setObject:[NSKeyedArchiver archivedDataWithRootObject:color requiringSecureCoding:NO error:nil]  forKey:@"backgroundColor"];
-    
 }
 
 - (UIColor *)backgroundColor {
@@ -91,7 +86,6 @@
 - (void)setBarColor:(UIColor *)color {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setObject:[NSKeyedArchiver archivedDataWithRootObject:color requiringSecureCoding:NO error:nil]  forKey:@"barColor"];
-    
 }
 
 - (UIColor *)barColor {

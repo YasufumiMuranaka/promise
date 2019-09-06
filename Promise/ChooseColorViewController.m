@@ -29,7 +29,7 @@ typedef NS_ENUM(NSInteger, CLChooseColorViewTrait) {
     self.popoverPresentationController.backgroundColor = [UIColor colorWithRed:self.rSlider.value green:self.gSlider.value blue:self.bSlider.value alpha:1.0];
     self.view.backgroundColor = [UIColor  colorWithRed:self.rSlider.value green:self.gSlider.value blue:self.bSlider.value alpha:1.0];
     NSInteger i = (NSInteger)round(self.rSlider.value * 255);
-    self.rField.text =  [NSString stringWithFormat:self.traitSegmented.selectedSegmentIndex == CLChooseColorViewTraitDec ? @"%ld": @"%X", i];
+    self.rField.text =  [NSString stringWithFormat:self.traitSegmented.selectedSegmentIndex == CLChooseColorViewTraitDec ? @"%ld": @"%lX", (long)i];
 }
 
 - (IBAction)gSliderValueChanged:(id)sender {
@@ -37,7 +37,7 @@ typedef NS_ENUM(NSInteger, CLChooseColorViewTrait) {
     self.popoverPresentationController.backgroundColor = [UIColor colorWithRed:self.rSlider.value green:self.gSlider.value blue:self.bSlider.value alpha:1.0];
     self.view.backgroundColor = [UIColor  colorWithRed:self.rSlider.value green:self.gSlider.value blue:self.bSlider.value alpha:1.0];
     NSInteger i = (NSInteger)round(self.gSlider.value * 255);
-    self.gField.text =  [NSString stringWithFormat:self.traitSegmented.selectedSegmentIndex == CLChooseColorViewTraitDec ? @"%ld": @"%X", i];
+    self.gField.text =  [NSString stringWithFormat:self.traitSegmented.selectedSegmentIndex == CLChooseColorViewTraitDec ? @"%ld": @"%lX", (long)i];
 }
 
 - (IBAction)bSliderValueChanged:(id)sender {
@@ -45,7 +45,7 @@ typedef NS_ENUM(NSInteger, CLChooseColorViewTrait) {
     self.popoverPresentationController.backgroundColor = [UIColor colorWithRed:self.rSlider.value green:self.gSlider.value blue:self.bSlider.value alpha:1.0];
     self.view.backgroundColor = [UIColor  colorWithRed:self.rSlider.value green:self.gSlider.value blue:self.bSlider.value alpha:1.0];
     NSInteger i = (NSInteger)round(self.bSlider.value * 255);
-    self.bField.text =  [NSString stringWithFormat:self.traitSegmented.selectedSegmentIndex == CLChooseColorViewTraitDec ? @"%ld": @"%X", i];
+    self.bField.text =  [NSString stringWithFormat:self.traitSegmented.selectedSegmentIndex == CLChooseColorViewTraitDec ? @"%ld": @"%lX", (long)i];
 }
 
 - (IBAction)okButtonTouchUpInside:(id)sender {
