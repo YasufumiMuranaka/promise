@@ -23,9 +23,9 @@
             }
             NSMutableURLRequest *urlRequest = [[NSMutableURLRequest alloc] initWithURL:url];
             [urlRequest setHTTPMethod:@"GET"];
-//        if ([UIApplication sharedApplication].networkActivityIndicatorVisible == NO) {
-//            [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
-//        }
+//            if ([UIApplication sharedApplication].networkActivityIndicatorVisible == NO) {
+//                [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+//            }
             NSURLSessionConfiguration *sessionConfiguration = [NSURLSessionConfiguration ephemeralSessionConfiguration];
             sessionConfiguration.timeoutIntervalForRequest = 30;
             sessionConfiguration.timeoutIntervalForResource = 60;
@@ -36,7 +36,7 @@
             NSURLSessionDataTask *task = [session dataTaskWithRequest:urlRequest
                                                     completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
                                                         [session finishTasksAndInvalidate];
-//                                                 [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+//                                                        [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
                                                         if (error) {
                                                             if (error.code == NSURLErrorTimedOut) {
                                                                 [promise reject:[NSError errorWithDomain:@"NSURLError" code:error.code userInfo:nil]];
@@ -94,16 +94,16 @@
 
 + (BOOL)isNetworkConnectEnable {
     /*
-    NetworkStatus netStatus = [[Reachability reachabilityForInternetConnection] currentReachabilityStatus];
-    switch (netStatus) {
-        case NotReachable: // 圏外
-            return NO;
-        case ReachableViaWWAN: // 3G/LTE
-        case ReachableViaWiFi: // WiFi
-            return YES;
-        default:
-            break;
-    }
+     NetworkStatus netStatus = [[Reachability reachabilityForInternetConnection] currentReachabilityStatus];
+     switch (netStatus) {
+     case NotReachable: // 圏外
+     return NO;
+     case ReachableViaWWAN: // 3G/LTE
+     case ReachableViaWiFi: // WiFi
+     return YES;
+     default:
+     break;
+     }
      return NO;
      */
     return YES;

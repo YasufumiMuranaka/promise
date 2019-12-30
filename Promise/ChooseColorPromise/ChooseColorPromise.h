@@ -11,11 +11,13 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ChooseColorPromise : Promise
+
 - (instancetype)initWithPresent:(UIViewController *)parent
-          sourceView:(UIView *)sourceView
-           direction:(UIPopoverArrowDirection)direction
-               color:(UIColor *)color
-              titile:(NSString *)title;
+                     sourceView:(UIView *)sourceView
+                      direction:(UIPopoverArrowDirection)direction
+                          color:(UIColor *)color
+                         titile:(NSString *)title;
+
 @end
 
 NS_ASSUME_NONNULL_END

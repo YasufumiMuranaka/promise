@@ -10,6 +10,7 @@
 #import "Promise.h"
 
 @interface Promise ()
+
 @property (copy, atomic) PromiseResolveBlock resolveBlock;
 @property (copy, atomic) PromiseRejectBlock rejectBlock;
 @property (weak, atomic) Promise *nextPromise;
@@ -20,6 +21,7 @@
 @property (strong, atomic) dispatch_semaphore_t thenOrCatchInSemaphore;
 @property (assign, atomic) NSInteger thenNestCount;
 @property (assign, atomic) BOOL fireCatch;
+
 @end
 
 @implementation Promise

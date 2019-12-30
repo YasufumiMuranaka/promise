@@ -12,10 +12,13 @@ NS_ASSUME_NONNULL_BEGIN
 @class ChooseColorViewController;
 
 @protocol ChooseColorViewControllerDelegate <NSObject>
+
 - (void)okButtonTouchUpInside:(ChooseColorViewController*)chooseColorViewController;
+
 @end
 
 @interface ChooseColorViewController : UIViewController<UITextFieldDelegate>
+
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UISlider *rSlider;
 @property (weak, nonatomic) IBOutlet UISlider *gSlider;
@@ -29,6 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (assign, nonatomic) id<ChooseColorViewControllerDelegate> delegate;
 
 - (void)refreshView;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -13,7 +13,9 @@ typedef NS_ENUM(NSInteger, CLChooseColorViewTrait) {
 };
 
 @interface ChooseColorViewController ()
+
 @property (assign, nonatomic) CLChooseColorViewTrait chooseColorViewTrait;
+
 @end
 
 @implementation ChooseColorViewController
@@ -26,24 +28,42 @@ typedef NS_ENUM(NSInteger, CLChooseColorViewTrait) {
 
 - (IBAction)rSliderValueChanged:(id)sender {
 //    NSLog(@"slide %f", self.rSlider.value);
-    self.popoverPresentationController.backgroundColor = [UIColor colorWithRed:self.rSlider.value green:self.gSlider.value blue:self.bSlider.value alpha:1.0];
-    self.view.backgroundColor = [UIColor  colorWithRed:self.rSlider.value green:self.gSlider.value blue:self.bSlider.value alpha:1.0];
+    self.popoverPresentationController.backgroundColor = [UIColor colorWithRed:self.rSlider.value
+                                                                         green:self.gSlider.value
+                                                                          blue:self.bSlider.value
+                                                                         alpha:1.0];
+    self.view.backgroundColor = [UIColor  colorWithRed:self.rSlider.value
+                                                 green:self.gSlider.value
+                                                  blue:self.bSlider.value
+                                                 alpha:1.0];
     NSInteger i = (NSInteger)round(self.rSlider.value * 255);
     self.rField.text =  [NSString stringWithFormat:self.traitSegmented.selectedSegmentIndex == CLChooseColorViewTraitDec ? @"%ld": @"%lX", (long)i];
 }
 
 - (IBAction)gSliderValueChanged:(id)sender {
 //    NSLog(@"slide %f", self.gSlider.value);
-    self.popoverPresentationController.backgroundColor = [UIColor colorWithRed:self.rSlider.value green:self.gSlider.value blue:self.bSlider.value alpha:1.0];
-    self.view.backgroundColor = [UIColor  colorWithRed:self.rSlider.value green:self.gSlider.value blue:self.bSlider.value alpha:1.0];
+    self.popoverPresentationController.backgroundColor = [UIColor colorWithRed:self.rSlider.value
+                                                                         green:self.gSlider.value
+                                                                          blue:self.bSlider.value
+                                                                         alpha:1.0];
+    self.view.backgroundColor = [UIColor  colorWithRed:self.rSlider.value
+                                                 green:self.gSlider.value
+                                                  blue:self.bSlider.value
+                                                 alpha:1.0];
     NSInteger i = (NSInteger)round(self.gSlider.value * 255);
     self.gField.text =  [NSString stringWithFormat:self.traitSegmented.selectedSegmentIndex == CLChooseColorViewTraitDec ? @"%ld": @"%lX", (long)i];
 }
 
 - (IBAction)bSliderValueChanged:(id)sender {
 //    NSLog(@"slide %f", self.bSlider.value);
-    self.popoverPresentationController.backgroundColor = [UIColor colorWithRed:self.rSlider.value green:self.gSlider.value blue:self.bSlider.value alpha:1.0];
-    self.view.backgroundColor = [UIColor  colorWithRed:self.rSlider.value green:self.gSlider.value blue:self.bSlider.value alpha:1.0];
+    self.popoverPresentationController.backgroundColor = [UIColor colorWithRed:self.rSlider.value
+                                                                         green:self.gSlider.value
+                                                                          blue:self.bSlider.value
+                                                                         alpha:1.0];
+    self.view.backgroundColor = [UIColor  colorWithRed:self.rSlider.value
+                                                 green:self.gSlider.value
+                                                  blue:self.bSlider.value
+                                                 alpha:1.0];
     NSInteger i = (NSInteger)round(self.bSlider.value * 255);
     self.bField.text =  [NSString stringWithFormat:self.traitSegmented.selectedSegmentIndex == CLChooseColorViewTraitDec ? @"%ld": @"%lX", (long)i];
 }
@@ -91,7 +111,10 @@ typedef NS_ENUM(NSInteger, CLChooseColorViewTrait) {
         [[NSScanner scannerWithString:newText] scanHexInt:&value];
     }
     slider.value = value / 255.0;
-    self.view.backgroundColor = [UIColor colorWithRed:self.rSlider.value green:self.gSlider.value blue:self.bSlider.value alpha:1.0];
+    self.view.backgroundColor = [UIColor colorWithRed:self.rSlider.value
+                                                green:self.gSlider.value
+                                                 blue:self.bSlider.value
+                                                alpha:1.0];
     return YES;
 }
 

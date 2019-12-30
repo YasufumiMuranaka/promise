@@ -11,8 +11,10 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HTTPRequestPromise : NSObject
+
 + (Promise *)getURL:(NSURL *)url;
 + (Promise *)postURL:(NSURL *)url postParameters:(NSArray *)postParameters;
+
 @end
 
 NS_ASSUME_NONNULL_END

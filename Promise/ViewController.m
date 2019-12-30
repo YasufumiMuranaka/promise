@@ -10,10 +10,12 @@
 #import "ChooseColorPromise.h"
 
 @interface ViewController ()
+
 @property (strong, nonatomic) Promise *promise;
 @property (strong, nonatomic) UIColor *backgroundColor;
 @property (strong, nonatomic) UIColor *barColor;
 @property (strong, nonatomic) UIColor *titleColor;
+
 @end
 
 @implementation ViewController
