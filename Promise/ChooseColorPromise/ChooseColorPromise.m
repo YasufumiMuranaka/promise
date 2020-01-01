@@ -30,7 +30,7 @@
             ChooseColorViewController *chooseColorViewController = [[UIStoryboard storyboardWithName:@"ChooseColor" bundle:nil] instantiateInitialViewController];
             chooseColorViewController.delegate = weakSelf;
             chooseColorViewController.modalPresentationStyle = UIModalPresentationPopover;
-            chooseColorViewController.preferredContentSize = CGSizeMake(290.0, 185.0);
+            chooseColorViewController.preferredContentSize = CGSizeMake(290.0, 220.0);
             UIPopoverPresentationController *presentationController = chooseColorViewController.popoverPresentationController;
             presentationController.delegate = weakSelf;
             presentationController.permittedArrowDirections = direction;
@@ -56,7 +56,6 @@
                                    blue:chooseColorViewController.bSlider.value
                                   alpha:1.0]];
     [chooseColorViewController dismissViewControllerAnimated:YES completion:nil];
-    chooseColorViewController = nil;
 }
 
 - (UIModalPresentationStyle)adaptivePresentationStyleForPresentationController:(UIPresentationController *)controller {
